@@ -2,7 +2,7 @@ import { serve } from "https://deno.land/std@0.119.0/http/server.ts";
 
 const wordToGuess = "créteil";
 
-const baseUrl = "https://nlp.polytechnique.fr";
+const baseUrl = "http://nlp.polytechnique.fr";
 
 async function getSimilarityScore(word: string): Promise<number> {
     const body = {
